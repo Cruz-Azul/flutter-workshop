@@ -12,7 +12,7 @@ const kBeerResource = '/v2/beers';
 class BeersRepository {
   final http.Client client;
 
-  BeersRepository({required this.client}) : assert(client != null);
+  BeersRepository({required this.client});
 
   Future<List<Beer>?> getBeers({
     int pageNumber = 1,
